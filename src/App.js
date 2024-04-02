@@ -1,10 +1,20 @@
-import React from 'react';
-
-export function App() {
-    return (
-        <div>
-            <h1>React App</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos delectus voluptatem ab repellat saepe eos molestiae cupiditate, omnis doloremque, necessitatibus totam consectetur porro sint quam libero aperiam? Laborum, quaerat?</p>
-        </div>
-    );
+import CreateNewVoting from "./Components/CreateNewVoting";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+// import "./index.css";
+import React from "react";
+import Voting from "./Components/Voting";
+import { Route, Routes } from "react-router";
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<CreateNewVoting />} />
+        <Route path="/:id" element={<Voting />} />
+      </Routes>
+    </>
+  );
 }
+
+export default App;

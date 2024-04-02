@@ -1,0 +1,17 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+.header_title {
+  color: purple;
+}
+.create_a_voting {
+  color: black;
+}
